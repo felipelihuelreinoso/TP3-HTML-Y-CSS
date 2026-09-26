@@ -1,0 +1,199 @@
+/* ===== Variables ===== */
+:root {
+  --color-primario: #345a39;
+  --color-secundario: #eaf2f8;
+  --color-texto: #2b2b2b;
+  --color-blanco: #ffffff;
+  --espaciado: 20px;
+  --radio-borde: 8px;
+}
+
+/* ===== Reset y base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--color-texto);
+  line-height: 1.6;
+  background-color: #f0fdf4; /* Fondo verde pastel muy suave */
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primario);
+  padding: 15px 30px;
+  z-index: 100;
+}
+
+.logo { color: var(--color-blanco); font-weight: bold; font-size: 1.3rem; }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+/* ===== Hero ===== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(26, 118, 34, 0.7), rgba(70, 94, 105, 0.7)),
+              url('the\ park.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-blanco);
+  padding: 0 20px;
+}
+
+.hero-contenido {
+  animation: aparecer 1s ease-out;
+}
+
+.hero h1 { font-size: 2.5rem; margin-bottom: var(--espaciado); }
+
+.btn-cta {
+  display: inline-block;
+  margin-top: var(--espaciado);
+  padding: 12px 28px;
+  background-color: var(--color-blanco);
+  color: var(--color-primario);
+  border-radius: var(--radio-borde);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Servicios (Grid) ===== */
+.servicios {
+  padding: 100px var(--espaciado) 60px;
+  text-align: center;
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaciado);
+  margin-top: 30px;
+}
+
+.servicio-card {
+  background-color: var(--color-secundario);
+  padding: var(--espaciado);
+  border-radius: var(--radio-borde);
+}
+
+/* ===== Testimonios (carrusel con scroll-snap) ===== */
+.testimonios {
+  padding: 60px var(--espaciado);
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: var(--espaciado);
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.testimonio {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  background: var(--color-blanco);
+  padding: 30px;
+  border-radius: var(--radio-borde);
+}
+
+/* ===== Contacto ===== */
+.contacto {
+  padding: 60px var(--espaciado);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: var(--radio-borde);
+}
+
+.form-contacto button {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 12px;
+  border-radius: var(--radio-borde);
+  cursor: pointer;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 900px) {
+  .grid-servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+  .grid-servicios {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 { font-size: 1.8rem; }
+}
+
+.servicio-img {
+  width: 180px;          
+  height: 180px;         
+  object-fit: contain;  
+  margin-top: 100px;     
+  display: block;
+  margin-left: auto;
+  margin-right: auto;   
+}

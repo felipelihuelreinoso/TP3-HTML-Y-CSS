@@ -1,0 +1,40 @@
+.campo {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1a5276;
+    outline: none;
+  }
+  
+  button {
+    background-color: #1a5276;
+    color: rgb(228, 228, 228);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #154360;
+  }
+  
+  button:active {
+    background-color: #0e2f44;
+  }

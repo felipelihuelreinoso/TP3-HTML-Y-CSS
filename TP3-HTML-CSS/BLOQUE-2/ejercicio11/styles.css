@@ -1,0 +1,30 @@
+.menu {
+    list-style: none;
+    width: 250px;
+  }
+  
+  .menu li {
+    padding: 10px;
+  }
+  
+  .menu li:nth-child(odd) {
+    background-color: #768ea0;
+  }
+  
+  .menu li:nth-child(even) {
+    background-color: #94abce;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .menu a:hover {
+    color: #e74c3c;
+  }
+  
+  .menu li::before {
+    content: "➤ ";
+    color: #000000;
+  }

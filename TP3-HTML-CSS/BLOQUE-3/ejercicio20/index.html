@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 20 - Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">La Secta del Parque</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-contenido">
+        <h1>Servicios del Parque</h1>
+        <p>Mejores decoraciones y trabajos.</p>
+        <a href="#contacto" class="btn-cta">Escribenos</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <div class="grid-servicios">
+        <article class="servicio-card">
+          <h3>Rastrillaje de hojas</h3>
+          <p>Realizado por un mapache y un azulejo (no van a terminar el trabajo).</p>
+          <img src="mordo y rix.png" alt="Rastrillaje" class="servicio-img">
+        </article>
+        <article class="servicio-card">
+          <h3>Cortado de cesped</h3>
+          <p>Realizado por un musculoso y un fantasmon.</p>
+          <img src="musculoso y fastamon.jpg" alt="Cortado de cesped" class="servicio-img">
+        </article>
+        <article class="servicio-card">
+          <h3>Cafeteria</h3>
+          <p>Hay de todo (comestible).</p>
+          <img src="cafeteria.jpg" alt="Cafetería" class="servicio-img">
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios">
+      <h2>Reseñas</h2>
+      <div class="carrusel">
+        <div class="testimonio">
+          <p>El mejor parque del mundo.</p>
+          <span>— Aylin</span>
+        </div>
+        <div class="testimonio">
+          <p>Muy graciosos y ofrecen show de cuarzo papiro navaja.</p>
+          <span>— Papaleta</span>
+        </div>
+        <div class="testimonio">
+          <p>A veces invocan demonios.</p>
+          <span>— Benson</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form class="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 The Park. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

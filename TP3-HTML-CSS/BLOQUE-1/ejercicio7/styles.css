@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid #1a5276;
+    background-color: #eaf2f8;
+  }

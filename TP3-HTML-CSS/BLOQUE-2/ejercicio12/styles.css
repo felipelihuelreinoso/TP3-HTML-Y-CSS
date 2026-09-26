@@ -1,0 +1,39 @@
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: 125%;
+    left: 0;
+    background: #40c502;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 10;
+  }
+  
+  .tooltip-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0f880a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }

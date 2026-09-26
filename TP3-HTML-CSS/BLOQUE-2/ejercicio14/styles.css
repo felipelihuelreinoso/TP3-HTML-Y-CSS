@@ -1,0 +1,40 @@
+:root {
+    --color-primario: #1a7622;
+    --color-secundario: #eaf2f8;
+    --color-texto: #2b2b2b;
+    --espaciado: 20px;
+    --radio-borde: 8px;
+  }
+  
+  body.oscuro {
+    --color-primario: #85c1e9;
+    --color-secundario: #20331c;
+    --color-texto: #f4f6f8;
+  }
+  
+  body {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    padding: var(--espaciado);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header {
+    background-color: var(--color-primario);
+    color: white;
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+  }
+  
+  main {
+    margin-top: var(--espaciado);
+  }
+  
+  button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px var(--espaciado);
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+  }

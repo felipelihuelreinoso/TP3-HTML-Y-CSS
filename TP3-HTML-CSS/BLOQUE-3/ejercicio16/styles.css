@@ -1,0 +1,36 @@
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #eaf2f8;
+    border-top: 6px solid #1a7622;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+    margin: 40px auto;
+  }
+  
+  @keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .tarjeta-animada {
+    width: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #22761a;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    animation: aparecer 0.8s ease-out 1;
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

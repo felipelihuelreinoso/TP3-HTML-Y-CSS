@@ -1,0 +1,43 @@
+.paso-radio {
+    display: none;
+  }
+  
+  .seccion {
+    display: none;
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  #paso1:checked ~ #seccion1 { display: block; }
+  #paso2:checked ~ #seccion2 { display: block; }
+  
+  input {
+    display: block;
+    width: 100%;
+    margin: 8px 0 15px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  input:valid {
+    border-color: #27ae60;
+  }
+  
+  input:invalid:not(:placeholder-shown) {
+    border-color: #960f00;
+  }
+  
+  .btn-siguiente, .btn-atras, button {
+    display: inline-block;
+    background-color: #1a7626;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }

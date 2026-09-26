@@ -1,0 +1,38 @@
+.layout {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+  }
+  
+  .header { grid-area: header; background: #22761a; color: white; padding: 15px; }
+  .sidebar { grid-area: sidebar; background: #d6eaf8; padding: 15px; }
+  .main { grid-area: main; background: #eaf2f8; padding: 15px; }
+  .footer { grid-area: footer; background: #1a7626; color: white; padding: 15px; text-align: center; }
+  
+  /* Breakpoint 1: tablet — se elimina el sidebar y el grid pasa a una columna */
+  @media (max-width: 768px) {
+    .layout {
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  /* Breakpoint 2: celular — ajuste de tipografía y padding */
+  @media (max-width: 480px) {
+    .header, .footer {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }

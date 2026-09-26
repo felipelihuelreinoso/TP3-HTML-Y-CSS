@@ -1,0 +1,18 @@
+.card p {
+    color: #022135;
+    font-weight: bold;
+  }
+  
+  #destacado {
+    background-color: #fdebd0;
+    padding: 10px;
+  }
+  
+  .nota {
+    font-style: italic;
+    color: #601181;
+  }
+  
+  span {
+    text-decoration: underline;
+  }
